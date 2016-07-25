@@ -1,2 +1,2 @@
 # LockFreeQueue
-Single Producer Multiple Consumer Queue
+Multiple Producer Multiple Consumer Queue based on CAS
