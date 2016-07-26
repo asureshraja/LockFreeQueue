@@ -79,7 +79,7 @@ dt thpool::LockFreeQueue<dt>::dequeue()
 	    direction = 1;
 	}
 	if(direction == 1) {
-	    if(old_head_val >= tail->load(std::memory_order_relaxed)) {
+	    if(old_head_val >= tail->load(std::memory_order_relaxed)+1) {
 		return ret_val;
 	    }
 	}
